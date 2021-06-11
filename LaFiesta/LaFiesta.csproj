@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4C93D506-654D-40EE-8A1B-F88ABFB8AC30}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LaFiesta</RootNamespace>
+    <AssemblyName>LaFiesta</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <StartupObject>LaFiesta.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aboutClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aboutClient.Designer.cs">
+      <DependentUpon>aboutClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="aboutFlat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aboutFlat.Designer.cs">
+      <DependentUpon>aboutFlat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="aboutLive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aboutLive.Designer.cs">
+      <DependentUpon>aboutLive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="allClients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="allClients.Designer.cs">
+      <DependentUpon>allClients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="allFlats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="allFlats.Designer.cs">
+      <DependentUpon>allFlats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="allLive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="allLive.Designer.cs">
+      <DependentUpon>allLive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="allStuff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="allStuff.Designer.cs">
+      <DependentUpon>allStuff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editAdmin.Designer.cs">
+      <DependentUpon>editAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editClient.Designer.cs">
+      <DependentUpon>editClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editFlat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editFlat.Designer.cs">
+      <DependentUpon>editFlat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainForm.Designer.cs">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newClient.Designer.cs">
+      <DependentUpon>newClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newFlat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newFlat.Designer.cs">
+      <DependentUpon>newFlat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newLive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newLive.Designer.cs">
+      <DependentUpon>newLive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newStuff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newStuff.Designer.cs">
+      <DependentUpon>newStuff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="aboutClient.resx">
+      <DependentUpon>aboutClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aboutFlat.resx">
+      <DependentUpon>aboutFlat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aboutLive.resx">
+      <DependentUpon>aboutLive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allClients.resx">
+      <DependentUpon>allClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allFlats.resx">
+      <DependentUpon>allFlats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allLive.resx">
+      <DependentUpon>allLive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allStuff.resx">
+      <DependentUpon>allStuff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editAdmin.resx">
+      <DependentUpon>editAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editClient.resx">
+      <DependentUpon>editClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editFlat.resx">
+      <DependentUpon>editFlat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainForm.resx">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newClient.resx">
+      <DependentUpon>newClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newFlat.resx">
+      <DependentUpon>newFlat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newLive.resx">
+      <DependentUpon>newLive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newStuff.resx">
+      <DependentUpon>newStuff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="main_back.jpg" />
+    <Content Include="profile.png" />
+    <None Include="Resources\main_photo.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
